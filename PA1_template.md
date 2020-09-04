@@ -66,7 +66,7 @@ passosdia %>%
     theme_minimal()
 ```
 
-![](PA1_template_files/figure-markdown_github/unnamed-chunk-4-1.png)
+![](./figure/plot1.png)
 
 #### 3. Calculate and report the mean and median of the total number of steps taken per day
 
@@ -99,7 +99,7 @@ passosintervalo %>%
     theme_minimal() 
 ```
 
-![](PA1_template_files/figure-markdown_github/unnamed-chunk-7-1.png)
+![](./figure/plot2.png)
 
 #### 2. Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
@@ -150,7 +150,7 @@ passosdia_sem_na %>%
     theme_minimal()
 ```
 
-![](PA1_template_files/figure-markdown_github/unnamed-chunk-12-1.png)
+![](./figure/plot3.png)
 
 ``` r
 mean(passosdia_sem_na$steps)
@@ -208,4 +208,4 @@ passosdia %>%
     facet_wrap(~day, nrow=2)
 ```
 
-![](PA1_template_files/figure-markdown_github/unnamed-chunk-17-1.png)
+![](./figure/plot4.png)
