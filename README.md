@@ -6,6 +6,9 @@ Reproductive Research - Project 1
 #### 1. Load the data
 
 ``` r
+library(dplyr)
+library(ggplot2)
+
 dados <- read.csv("./activity.csv", header = T, stringsAsFactors = F)
 ```
 
