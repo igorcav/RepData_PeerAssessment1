@@ -66,7 +66,7 @@ passosdia %>%
     theme_minimal()
 ```
 
-![](./figure/plot1.png)
+![](PA1_template_files/figure-markdown_github/unnamed-chunk-4-1.png)
 
 #### 3. Calculate and report the mean and median of the total number of steps taken per day
 
@@ -99,7 +99,7 @@ passosintervalo %>%
     theme_minimal() 
 ```
 
-![](./figure/plot2.png)
+![](PA1_template_files/figure-markdown_github/unnamed-chunk-7-1.png)
 
 #### 2. Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
@@ -120,6 +120,9 @@ sum(is.na(dados$steps))
     ## [1] 2304
 
 #### 2. Devise a strategy for filling in all of the missing values in the dataset. The strategy does not need to be sophisticated. For example, you could use the mean/median for that day, or the mean for that 5-minute interval, etc.
+
+We will use the mean value per interval, making a merge with the
+data.frame *passosintervalo*:
 
 ``` r
 dados_com_na <- subset(dados, is.na(steps))
@@ -147,7 +150,7 @@ passosdia_sem_na %>%
     theme_minimal()
 ```
 
-![](./figure/plot3.png)
+![](PA1_template_files/figure-markdown_github/unnamed-chunk-12-1.png)
 
 ``` r
 mean(passosdia_sem_na$steps)
@@ -205,4 +208,4 @@ passosdia %>%
     facet_wrap(~day, nrow=2)
 ```
 
-![](./figure/plot4.png)
+![](PA1_template_files/figure-markdown_github/unnamed-chunk-17-1.png)
