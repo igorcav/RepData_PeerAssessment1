@@ -121,6 +121,9 @@ sum(is.na(dados$steps))
 
 #### 2. Devise a strategy for filling in all of the missing values in the dataset. The strategy does not need to be sophisticated. For example, you could use the mean/median for that day, or the mean for that 5-minute interval, etc.
 
+We will use the mean value per interval, making a merge with the
+data.frame *passosintervalo*:
+
 ``` r
 dados_com_na <- subset(dados, is.na(steps))
 dados_sem_na <- subset(dados, !is.na(steps))
